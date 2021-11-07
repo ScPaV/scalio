@@ -1,0 +1,28 @@
+h1  {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.example-full-width {
+  width: 500px;
+  color: #fff;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+::ng-deep {
+  .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #fff;
+  }
+  .mat-form-field-label {
+    color: #fff!important;
+  }
+}

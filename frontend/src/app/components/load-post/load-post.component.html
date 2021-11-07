@@ -1,0 +1,15 @@
+<!-- <h1>Find a Post</h1> -->
+
+<form [formGroup]="form">
+  <div class="wrapper">
+    <mat-form-field class="example-full-width">
+      <mat-label>Find a Post by ID</mat-label>
+      <input matInput formControlName="postId" autocomplete="off">
+      <mat-error *ngIf="form.get('postId')?.hasError('required')">
+        Please enter a post ID
+      </mat-error>
+    </mat-form-field>
+    <button class="button" (click)="loadPost()">Search</button>
+  </div>
+  <div class="error" *ngIf="postLoadError$ | async">{{ postLoadError$ | async }}</div>
+</form>

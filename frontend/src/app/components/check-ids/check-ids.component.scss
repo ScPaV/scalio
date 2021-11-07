@@ -1,0 +1,31 @@
+.check-content {
+  width: 100%;
+  bottom: 100px;
+  color: #bfbfbf;
+  position: fixed;
+  transition: .3s;
+  text-align: center;
+  .load {
+    cursor: pointer;
+    transition: .3s;
+    border-bottom: 1px solid #bfbfbf;
+    &:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .logo {
+    position: relative;
+    &:before {
+      content: '';
+      background: url('/assets/images/logo-white-mark.svg') center center no-repeat;
+      background-size: contain;
+      height: 120px;
+      position: absolute;
+      width: 70px;
+      top: -52px;
+      left: -90px;
+      opacity: .5;
+    }
+  }
+}

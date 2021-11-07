@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Post Details</h1>
+  <h2>{{ (post$ | async)?.title }}</h2>
+  <p>{{ (post$ | async)?.body }}</p>
+  <p *ngIf="!(post$ | async)">There is no post here, please go brack to the Home page</p>
+  <button class="button button__small" routerLink="/">Go Home</button>
+</div>
