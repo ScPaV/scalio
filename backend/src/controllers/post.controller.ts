@@ -16,7 +16,9 @@ export class PostController {
   @Get()
   posts(@Res() res: Response): Observable<Post[] | ResError> {
     return this.postService.find().pipe(
-      tap((posts: Post[]) => posts.length ? res.json(posts) : res.status(404).send()),
+      tap(
+        (posts: Post[]) => posts.length ? res.json(posts) : res.status(404).send()
+      ),
       catchError((err: ResError) => {
         res.status(500).json({ message: err });
         return of(err);
@@ -27,7 +29,9 @@ export class PostController {
   @Get(':id')
   post(@Param('id') id: string, @Res() res: Response): Observable<Post | ResError> {
     return this.postService.findOne(id).pipe(
-      tap((post: Post) => post ? res.json(post) : res.status(404).send()),
+      tap(
+        (post: Post) => post ? res.json(post) : res.status(404).send()
+      ),
       catchError((err: ResError) => {
         res.status(500).json({ message: err });
         return of(err);

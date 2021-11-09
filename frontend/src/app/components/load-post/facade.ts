@@ -41,4 +41,8 @@ export class LoadPostFacade {
       })
     ).subscribe();
   }
+
+  resetError(): void {
+    this.postsStateService.postError$.next(null);
+  }
 }

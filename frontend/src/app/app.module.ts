@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule} from '@angular/material/button';
 import { PostComponent } from './components/post/post.component';
 import { CheckIdsComponent } from './components/check-ids/check-ids.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CheckIdsComponent } from './components/check-ids/check-ids.component';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

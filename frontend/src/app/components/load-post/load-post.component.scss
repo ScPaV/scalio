@@ -1,3 +1,6 @@
+@import '../../../styles/breakpoints';
+
+
 h1  {
   color: #fff;
   font-size: 70px;
@@ -11,6 +14,15 @@ h1  {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 100;
+  @include media-sm {
+    width: auto;
+  }
+}
+
+.button {
+  @include media-sm {
+    padding: 10px 30px;
+  }
 }
 
 .wrapper {
