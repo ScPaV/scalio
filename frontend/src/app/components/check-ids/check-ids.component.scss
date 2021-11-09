@@ -15,19 +15,20 @@
     }
   }
   .logo {
-    position: relative;
     width: 70px;
+    position: relative;
     display: inline-block;
     &:before {
-      content: '';
-      background: url('/assets/images/logo-white-mark.svg') center center no-repeat;
-      background-size: contain;
-      height: 120px;
-      position: absolute;
-      width: 70px;
       top: -64px;
       left: -8px;
+      width: 70px;
+      content: '';
       opacity: .5;
+      height: 120px;
+      position: absolute;
+      background: url('/assets/images/logo-white-mark.svg') center center no-repeat;
+      background-size: contain;
+
     }
   }
 }

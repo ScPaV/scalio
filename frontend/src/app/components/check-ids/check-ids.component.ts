@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { LoadPostsFacade } from './facade';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 
 @Component({
@@ -10,10 +10,9 @@ import { LoadPostsFacade } from './facade';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CheckIdsComponent {
-
   constructor(
     private readonly facade: LoadPostsFacade
-  ) { }
+  ) {}
 
   loadPosts(): void {
     this.facade.loadPosts();
